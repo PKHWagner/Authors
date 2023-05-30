@@ -48,7 +48,7 @@ const ListOfAuthors = ({ allAuthors, setAllAuthors, removeFromDom }) => {
               allAuthors.map((data, i) => {
                 return (
                   <tr>
-                    <td><Link to={`/view/${data._id}`}>{data.lastName}, {data.firstName}</Link></td>
+                    <td>{data.lastName}, {data.firstName}</td>
                     <td className='text-end'>
                       <Link className='btn btn-outline-warning me-2' to={`/edit/${data._id}`}>Edit</Link>
                       <button className='btn btn-outline-danger' onClick={(e) => { remove(data._id) }}>Delete</button>

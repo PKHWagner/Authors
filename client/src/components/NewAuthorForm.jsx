@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios, { all } from 'axios';
+import axios from 'axios';
 import { Link, useNavigate, useParams } from 'react-router-dom'
 
 const NewAuthorForm = ({ allAuthors, setAllAuthors }) => {

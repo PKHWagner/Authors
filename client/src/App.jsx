@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ListOfAuthors from './components/ListOfAuthors';
 import NewAuthorForm from './components/NewAuthorForm';
 import EditAuthorForm from './components/EditAuthorForm';
-import ViewAuthor from './components/ViewAuthor';
+
 
 
 const App = () => {
@@ -23,7 +23,6 @@ const App = () => {
           <Route element={<ListOfAuthors allAuthors={allAuthors} setAllAuthors={setAllAuthors} removeFromDom={removeFromDom} />} path="/" />
           <Route element={<NewAuthorForm allAuthors={allAuthors} setAllAuthors={setAllAuthors} />} path="/new" />
           <Route element={<EditAuthorForm />} path="/edit/:id" />
-          <Route element={<ViewAuthor />} path="/view/:id" />
         </Routes>
       </BrowserRouter>
     </>
